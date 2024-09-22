@@ -7,7 +7,7 @@
 ---  
 ## ⏯️ INTRODUÇÃO  
 
-<p align='justify'>Neste laboratório do bootcamp <i>Azure Essencials</i>, foram abordadas questões referentes a Acordo de Nível de Serviço (SLA) e uas implicações na criação de recursos, como máquinas virtuais no portal <a href='https://portal.azure.com/'><i>Microsoft Azure.</i></a>. Além disso, essa prática tinha como objetivo explorar a documentação relacionada aos tópicos tratados no laboratório.</p>  
+<p align='justify'>Neste laboratório do bootcamp <i>Azure Essencials</i>, foram abordadas questões referentes a Acordo de Nível de Serviço (SLA) e suas implicações na criação de recursos, como máquinas virtuais no portal <a href='https://portal.azure.com/'><i>Microsoft Azure.</i></a>. Além disso, essa prática tinha como objetivo explorar a documentação relacionada aos tópicos tratados no laboratório.</p>  
 
 --- 
 ## 🗒️RESUMO DOS TÓPICOS:  
