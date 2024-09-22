@@ -1,4 +1,4 @@
-# ☁️ CRIANDO MÁQUINAS VIRTUAIS NO AZURE  
+# ☁️ DESAFIO DE PROJETO: CONFIGURANDO UMA INSTÂNCIA DE BANCO DE DADOS NO AZURE  
  
 <p align="center">
   <img src="https://i.postimg.cc/Gmxtwttm/azure-fundamentals.png" width="256">
@@ -7,30 +7,30 @@
 ---  
 ## ⏯️ INTRODUÇÃO  
 
-<p align='justify'>Neste laboratório do bootcamp <i>Azure Essencials</i>, foram abordadas questões referentes a Acordo de Nível de Serviço (SLA) e suas implicações na criação de recursos, como máquinas virtuais no portal <a href='https://portal.azure.com/'><i>Microsoft Azure.</i></a>. Além disso, essa prática tinha como objetivo explorar a documentação relacionada aos tópicos tratados no laboratório.</p>  
+<p align='justify'>Neste laboratório do bootcamp <i>Azure Essencials</i>, foram abordadas questões referentes a configuração de Máquinas Virtuais e um Banco de Dados SQL no portal <a href='https://portal.azure.com/'><i>Microsoft Azure</i></a>. Através do projeto, foram simuladas possibilidades de configurar recursos e conhecidos os custos que podem ser cobrados pela sua utilização mensal.</p>  
 
 --- 
 ## 🗒️RESUMO DOS TÓPICOS:  
 
-<p align='justify'>- A Tabela de Acordo de Nível de Serviço (<i></i>Service Level Agreement</i> – SLA) mostra os percentuais de SLA e os tempos previstos para inatvidade do recurso ou serviço por semana, mês e ano. </p>     
+<p align='justify'>- Ao selecionar um sistema operacional (imagem) para a criação de VM, abaixo aparecerá o tamanho e previsibilidade de valor cobrado pela disponibilidade por mês. </p>     
 
 <p align="center">
   <img src=''> 
 </p>
 
-<p align='justify'>- Ao criar um recurso que já obedece SLA, por ser nativo no Azure, se este ficar indisponível por mais tempo do que a previsão da tabela de SLA, a Microsoft deve ressarcir ao cliente. Entretanto, não há ressarcimento para indisponibilidade de máquina virtual criada por cliente, porque o SLA é criado a partir da requisição do cliente.</p>    
+<p align='justify'>- Na modalidade <i>Pay-as-you-go</i>, com a seleção de imagem da máquina, tudo que for criado pelo cliente é responsabilidade dele.</p>    
 
 <p align="center">
   <img src='' width=880>  
 </p>
 
-<p align='justify'>- É importante saber qual o tempo de inatividade aceitável do serviço ou recurso antes de criar uma arquitetura de estruturas na nuvem.</p>    
+<p align='justify'>- Para a criação da VM, podem ser adicionados mais discos além dos que já vêm por padrão; na parte de redes, são configuradas redes virtuais e endereçamento de redes, se a máquina estará exposta à internet; é definida a proteção das redes; habilita-se a conexão com ou sem desligamento automático. </p>    
 
 <p align="center">
   <img src=''> 
 </p>
 
-<p align='justify'>- Na comparação entre recursos com 99% e 99,99% de SLA existe uma diferença grande no tempo de indisponibilidade, porque vai de 1,68 hora para 1,01 minuto. Há menor tempo de indisponibilidade quanto mais 9 houver no percentual do SLA e, quanto menos 9 houver no percentual de SLA, mais tempo de indisponibilidade terá o recurso/serviço.</p>  
+<p align='justify'>- Criar uma máquina virtual não é algo muito simples, exceto se forem utilizadas as configurações de fábrica, sem nenhuma personalização pelo cliente.</p>  
 
 <p align="center">
   <img src='' width=880>  
@@ -42,20 +42,24 @@
   <img src='' width=880>
 </p>
   
-<p align='justify'>- Quanto à vinculação do SLA a opções escolhidas para criação de recursos, um exemplo é a opção selecionada para a zona de disponibilidade da VM, que envolve a escolha de um SLA específico. </p>     
+<p align='justify'>- Para criação de um banco de dados SQL, é preciso indicar a Assinatura, Grupo de recursos, Nome do banco de dados, selecionar a criação de um Servidor. </p>     
 
 <p align="center">
   <img src=''> 
 </p>
 
 
-<p align='justify'>- O mesmo vale para a criação de conta de armazenamento. Quando é selecionada a opção de redundância, há replicação do dado entre data centers e regiões. Quanto mais se replica um recurso, há menos tempo de indisponibilidade, por ter o mesmo dado disponível em mais de um lugar ao mesmo tempo, o que, por outro lado, ajuda na recuperação dos dados em caso de situações extremas, como catástrofes.</p>    
+<p align='justify'>- A plataforma disponibiliza opções de Redundância para o bd, na qual entra o SLA, a partir da escolha feita, exibe os valores que serão cobrados mensalmente.</p>    
 
 <p align="center">
   <img src=''> 
 </p>
 
-<p align='justify'>- Como há preços fixados para cobrança pelo uso do serviço na nuvem, é importante saber a finalidade real da requisição, se é para produção, teste, só saber como funciona, porque é preciso ter um orçamento pré-definido.</p>  
+<p align='justify'>- É importante lembrar que o cenário de gerenciamento está associado ao modelo de serviço, assim, quanto mais o cliente se envolve, menos a Microsoft está e vice-versa.</p>  
+
+<p align='justify'>- <i>IaaS</i> é um modelo que demanda mais do cliente para fazer ajustes, manutenções, configurações. O modelo menos trabalhoso é o <i>SaaS</i>.</p>  
+
+
 
 ---  
 ## ✍️ AUTORA    
@@ -73,8 +77,8 @@ Contato: rosa.carla@pucpr.edu.br
 
 ## 🔗 LINKS ÚTEIS  
 
-- [Recomendações para definir metas de confiabilidade](https://learn.microsoft.com/pt-br/azure/well-architected/reliability/metrics)
-- [Opções de disponibilidade para Máquinas Virtuais do Azure](https://learn.microsoft.com/pt-br/azure/virtual-machines/availability)
+- [<i>Azure: Pay-as-you-go</i>](https://azure.microsoft.com/en-au/pricing/offers/ms-azr-0003p)
+- [<i>Azure SQL Database pricing</i>](https://azure.microsoft.com/en-au/pricing/details/azure-sql-database/single/)
 
 ---  
 
